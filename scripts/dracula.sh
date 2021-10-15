@@ -25,19 +25,19 @@ main()
   show_refresh=$(get_tmux_option "@dracula-refresh-rate" 5)
   IFS=' ' read -r -a plugins <<< $(get_tmux_option "@dracula-plugins" "battery network weather")
 
-  # seabird - petrel - Color Pallette
-  white='#e6eaed'
-  gray='#0b141a'
-  dark_gray='#1d252b'
+  # gruvbox - Color Pallette
+  white="#fbf1c7"
+  gray="#7c6f64"
+  dark_gray="#282828"
 
-  red='#ba656d'
-  orange='#b06d43'
-  yellow='#947b38'
-  green='#3f8f36'
-  cyan='#35898c' # teal
-  light_purple='#4384b0' # blue
-  dark_purple='#8e6fbd' # purple
-  pink='#b06886'
+  red="#cc241d"
+  orange="#d65d0e"
+  yellow="#d79921"
+  green="#98971a"
+  cyan="#458588" # teal
+  light_purple="#d3869b" # blue
+  dark_purple="#8f3f71" # purple
+  pink="#fb4934"
 
   # Handle left icon configuration
   case $show_left_icon in
